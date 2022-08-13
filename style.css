@@ -1,0 +1,101 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    /* overflow: hidden; */
+    height: 100vh;
+    width: 100%;
+    animation: changeBG 10s linear infinite;    
+}
+@keyframes changeBG {
+    0%{background-color: rgb(86, 45, 151);}
+    20%{background-color: rgb(190, 99, 152);}
+    40%{background-color: rgb(18, 19, 80);}
+    60%{background-color: #13886b;}
+    80%{background-color: #306e9b;}
+    100%{background-color: #eb3b5a;}
+}
+.container {
+    width: 350px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 65%;
+    left: 50%;
+}
+#card {
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+  }
+#card img {
+    display: block;
+    width: 180px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.foot {
+    width: 100%;
+}
+.hp{
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 35px;
+    margin-left: auto;
+    font-weight: 450;
+}
+.poke-name{
+    text-align: center;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.types{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+    margin-bottom: 15px;
+}
+.hp span, .types span {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.types span {
+    padding: 5px 20px;
+    border-radius: 20px;
+    color: #2c2a2a;
+}
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+.stats p {
+    color: #404060;
+}
+#btn {
+    display: block;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #6553c9;
+    color: #ffffff;
+    position: relative;
+    margin: 30px auto;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.45);
+} 
